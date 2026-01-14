@@ -16,8 +16,7 @@ export async function POST(request: Request) {
         const body = await request.json();
         const { username, password } = LoginSchema.parse(body);
 
-        // FIXME: Revert to process.env.DATABASE_URL or constructed string once process.env loading is stable
-        const connectionString = `postgres://postgres.fgoeivchvgrgcxtjvsjt:*Usamajay1122%23@aws-1-ap-south-1.pooler.supabase.com:6543/postgres`;
+        const connectionString = process.env.DATABASE_URL || "";
 
         const pool = new Pool({
             connectionString,

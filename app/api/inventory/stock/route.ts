@@ -6,8 +6,7 @@ process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
 
 export async function GET(request: Request) {
     try {
-        // FIXME: Using hardcoded connection to bypass environment loading issues
-        const connectionString = `postgres://postgres.fgoeivchvgrgcxtjvsjt:*Usamajay1122%23@aws-1-ap-south-1.pooler.supabase.com:6543/postgres`;
+        const connectionString = process.env.DATABASE_URL || "";
 
         const pool = new Pool({
             connectionString,
