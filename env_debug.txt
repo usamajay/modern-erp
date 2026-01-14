@@ -1,0 +1,5 @@
+DB_USER=postgres.fgoeivchvgrgcxtjvsjt
+DB_HOST=aws-1-ap-south-1.pooler.supabase.com
+CONNECTION_STRING=postgres://postgres.fgoeivchvgrgcxtjvsjt:***@aws-1-ap-south-1.pooler.supabase.com:6543/postgres
+CONNECTION_STRING_HARDCODED=postgres://postgres.fgoeivchvgrgcxtjvsjt:***@aws-1-ap-south-1.pooler.supabase.com:6543/postgres
+CONNECTION_STRING_HARDCODED=postgres://postgres.fgoeivchvgrgcxtjvsjt:***@aws-1-ap-south-1.pooler.supabase.com:6543/postgres
