@@ -95,7 +95,7 @@ export async function POST(request: Request) {
         return NextResponse.json(
             {
                 error: error instanceof Error ? error.message : "Failed to save production batch",
-                details: error instanceof z.ZodError ? error.errors : undefined
+                details: error instanceof z.ZodError ? error.issues : undefined
             },
             { status: 400 }
         );
